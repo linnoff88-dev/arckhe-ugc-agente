@@ -3,7 +3,7 @@ import os, sys
 from PIL import Image, ImageDraw, ImageFont
 
 W, H, FPS, DUR = 1080, 1920, 30, 15.0
-OFF = 0.2  # atraso da narração no vídeo
+OFF = 0.2  # atraso da narraçêo no vídeo
 OUT = sys.argv[1]
 F = os.path.expanduser('~/.local/share/fonts/')
 BLACK = F + 'Montserrat-Black.ttf'
@@ -11,7 +11,7 @@ XB = F + 'Montserrat-ExtraBold.ttf'
 BLUE = (43, 140, 247)
 WHITE = (255, 255, 255)
 CHIP = [('Cursos de IA', (43, 140, 247)), ('Agentes de IA', (34, 170, 110)),
-        ('Automação', (247, 145, 30)), ('Comunidade', (130, 90, 230))]
+        ('Automaçêo', (247, 145, 30)), ('Comunidade', (130, 90, 230))]
 
 
 def font(p, s):

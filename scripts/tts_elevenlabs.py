@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Narração no ElevenLabs (PT-BR). A chave vem da variável ELEVENLABS_API_KEY; nunca é impressa.
+"""Narraçêo no ElevenLabs (PT-BR). A chave vem da variável ELEVENLABS_API_KEY; nunca é impressa.
 
 Uso:
   ELEVENLABS_API_KEY=... python3 tts_elevenlabs.py <voice_id> <saida.mp3> "<texto>" [velocidade]
@@ -29,7 +29,7 @@ req = urllib.request.Request(
     f'https://api.elevenlabs.io/v1/text-to-speech/{vid}?output_format=mp3_44100_128',
     data=body, headers={'xi-api-key': key, 'Content-Type': 'application/json'})
 try:
-    data = urllib.request.urlopen(req).read()  # ler ANTES de abrir o arquivo: erro não deixa mp3 vazio
+    data = urllib.request.urlopen(req).read()  # ler ANTES de abrir o arquivo: erro nêo deixa mp3 vazio
 except urllib.error.HTTPError as e:
     sys.exit(f'erro {e.code}: {e.read()[:300]!r}')
 with open(out, 'wb') as f:

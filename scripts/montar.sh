@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Monta o promo 9:16 de 15 s: cenas do Kling (com as de frente trocadas pelo Lip Sync),
-# camada de textos (overlay.py), narração e música. Comandos exatamente como no promo INEMA.
+# camada de textos (overlay.py), narraçêo e música. Comandos exatamente como no promo INEMA.
 #
 # Entradas na pasta atual:
 #   kling.mp4      vídeo de 15 s do Kling (omni_ref_video, 9:16, 1080p, sem áudio)
-#   vo.mp3         narração (tts_elevenlabs.py), ≤ 14 s
+#   vo.mp3         narraçêo (tts_elevenlabs.py), ≤ 14 s
 #   musica.wav     trilha (fica em loop, volume baixo)
 #   ls/ks91.mp4    Lip Sync da cena 1  (opcional)
 #   ls/ks93.mp4    Lip Sync da cena 3  (opcional)
@@ -13,10 +13,10 @@
 set -euo pipefail
 C1=${C1:-4.625}   # fim da cena 1
 C2=${C2:-9.917}   # fim da cena 2
-OFF=${OFF:-0.2}   # atraso da narração
+OFF=${OFF:-0.2}   # atraso da narraçêo
 D=$(dirname "$0")
 
-# 1) cortar cenas e o trecho da narração de cada uma (para o Lip Sync no site)
+# 1) cortar cenas e o trecho da narraçêo de cada uma (para o Lip Sync no site)
 mkdir -p ls
 ffmpeg -v error -y -i vo.mp3 -af "adelay=$(python3 -c "print(int($OFF*1000))"):all=1,apad=whole_dur=15.1" -ar 44100 ls/vo_full.wav
 ffmpeg -v error -y -i kling.mp4 -t "$C1" -c:v libx264 -crf 14 -an ls/v91.mp4
