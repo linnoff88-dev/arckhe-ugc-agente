@@ -1,4 +1,4 @@
-"""Camada de textos do promo INEMA 15 s (9:16): PNG RGBA por quadro, 30 fps, sincronizada com vo3_amanda (+0,2 s)."""
+"""Camada de textos do promo ARCKHÉ 15 s (9:16): PNG RGBA por quadro, 30 fps, sincronizada com vo3_amanda (+0,2 s)."""
 import os, sys
 from PIL import Image, ImageDraw, ImageFont
 
@@ -93,7 +93,7 @@ for n in range(int(DUR * FPS)):
     a = alpha_in_out(v, 3.45, 7.85)
     if a > 0:
         ImageDraw.Draw(img).rounded_rectangle((170, 1125, 910, 1240), radius=30, fill=(10, 18, 40, int(200 * a)))
-        img.alpha_composite(text_layer(['No INEMA.CLUB tem'], [f_mid], 1140, lambda i: WHITE, a, 0))
+        img.alpha_composite(text_layer(['No ARCKHÉ AI tem'], [f_mid], 1140, lambda i: WHITE, a, 0))
         d = ImageDraw.Draw(img)
         for i, (lab, col) in enumerate(CHIP):
             ci = alpha_in_out(v, [4.3, 5.25, 6.0, 6.75][i], 7.85, 0.25) * a
@@ -122,7 +122,7 @@ for n in range(int(DUR * FPS)):
         fe = font(BLACK, int(128 * s))
         lay = Image.new('RGBA', (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(lay)
-        p1, p2 = 'INEMA', '.CLUB'
+        p1, p2 = 'ARCKHÉ', '.CLUB'
         b1, b2 = d.textbbox((0, 0), p1, font=fe), d.textbbox((0, 0), p2, font=fe)
         tw = (b1[2] - b1[0]) + (b2[2] - b2[0])
         x = (W - tw) // 2

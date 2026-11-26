@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>UGC with an agent — a promo video made by an AI agent</title>
-<meta name="description" content="Real case: how an AI agent made a 15 s UGC video for INEMA.CLUB with Kling on the subscription, lipsync on the website, an ElevenLabs voice and ffmpeg editing. Idea, tips, problems and commands.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/ugc-agente/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/ugc-agente/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/ugc-agente/guia/es/">
+<meta name="description" content="Real case: how an AI agent made a 15 s UGC video for ARCKHÉ AI with Kling on the subscription, lipsync on the website, an ElevenLabs voice and ffmpeg editing. Idea, tips, problems and commands.">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/arckhe-/guia/">
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/arckhe-/guia/en/">
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/arckhe-/guia/es/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -39,8 +39,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -113,9 +113,9 @@
   <a class="brand" href="#top"><span class="emoji">🎬</span> UGC with an agent</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#oque">The idea</a>
@@ -125,7 +125,7 @@
     <a class="sec" href="#guia">Guide</a>
     <span class="lang"><a href="../">PT</a><a class="on" href="./">EN</a><a href="../es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-    <a class="btn" href="https://github.com/inematds/ugc-agente" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/ugc-agente" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -133,7 +133,7 @@
   <div class="glow"></div>
   <div class="wrap">
     <div>
-      <span class="chip">Real case · INEMA.CLUB promo in 15 s</span>
+      <span class="chip">Real case · ARCKHÉ AI promo in 15 s</span>
       <h1>A UGC video made from start to finish by an <span class="amb">agent</span></h1>
       <p class="lead">One reference image became a Short with Kling scenes, an ElevenLabs voice, lipsync and publishing, without anyone opening a video editor.</p>
       <div class="cta">
@@ -147,13 +147,13 @@
 
 <section id="resumo" class="resumo"><div class="wrap">
   <span class="chip">In short</span>
-  <p>This project tells how an AI agent (Claude Code) produced a 15-second promo video for INEMA.CLUB in UGC style, the "real person talking to the camera" kind of video you see on social media. It is for content creators who want to hand production off to an agent. It shows the idea, the steps with the commands used, the tips that made a difference and the problems that came up along the way. To repeat it, you need a Kling AI subscription, an ElevenLabs account, ffmpeg, Python and a browser logged in to Kling.</p>
+  <p>This project tells how an AI agent (Claude Code) produced a 15-second promo video for ARCKHÉ AI in UGC style, the "real person talking to the camera" kind of video you see on social media. It is for content creators who want to hand production off to an agent. It shows the idea, the steps with the commands used, the tips that made a difference and the problems that came up along the way. To repeat it, you need a Kling AI subscription, an ElevenLabs account, ffmpeg, Python and a browser logged in to Kling.</p>
 </div></section>
 
 <section id="oque"><div class="wrap">
   <span class="chip">The idea</span>
   <h2>One image, one request, and the agent does the rest</h2>
-  <p class="sub">The request was one sentence: "I want a 15-second promo video for INEMA, use Kling to show what we have on inema.club using this image as a reference, and then an ElevenLabs voice in Portuguese". The agent planned it, showed the cost, waited for the go-ahead and produced it.</p>
+  <p class="sub">The request was one sentence: "I want a 15-second promo video for ARCKHÉ, use Kling to show what we have on ARCKHÉ AI using this image as a reference, and then an ElevenLabs voice in Portuguese". The agent planned it, showed the cost, waited for the go-ahead and produced it.</p>
   <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="../assets/banner-grade-en.jpg" alt="The six stages: idea, Kling on the subscription, lipsync on the website, ElevenLabs voice, editing and publishing" loading="lazy" style="width:100%;display:block"></figure>
   <div class="grid g3">
     <div class="card"><h3>💳 Subscription, not API</h3><p>The video came out of the Kling Pro subscription, through the official CLI. Cost: 120 credits for the scenes and 10 for the lipsync, out of a balance of 7,936.</p></div>
@@ -161,7 +161,7 @@
     <div class="card"><h3>🔎 Checked before delivery</h3><p>Every stage was checked: voice transcription, a contact sheet of the video, frame 0 with the hook, and an exact 15 s duration.</p></div>
   </div>
   <div class="ex" style="margin-top:22px">
-    <figure><img src="../assets/referencia.jpg" alt="Reference image: young woman holding a phone with the INEMA.CLUB app" loading="lazy"><figcaption>The reference image Nei sent. The woman, the setting and the phone screen became the video.</figcaption></figure>
+    <figure><img src="../assets/referencia.jpg" alt="Reference image: young woman holding a phone with the ARCKHÉ AI app" loading="lazy"><figcaption>The reference image Nei sent. The woman, the setting and the phone screen became the video.</figcaption></figure>
     <div class="card"><h3>What the agent decided on its own</h3><p>
       • 9:16 format, after asking (Reels and Shorts).<br>
       • Ask Kling for scenes <b>without text</b>, because it distorts letters, and lay the text on top, sharp.<br>
@@ -251,7 +251,7 @@
 <section id="guia"><div class="wrap">
   <span class="chip">User guide · step by step</span>
   <h2>Repeating the production</h2>
-  <p class="sub">The commands below are the ones that ran for the INEMA promo. Swap the image, the text and the voice for your own.</p>
+  <p class="sub">The commands below are the ones that ran for the ARCKHÉ promo. Swap the image, the text and the voice for your own.</p>
 
   <div class="step"><div class="b">1</div><div>
     <h3>Generate the scenes in Kling</h3>
@@ -269,8 +269,8 @@
     <h3>Record the narration</h3>
     <p>About 30 words, with the payoff in the first sentence. Check the duration and the pronunciation.</p>
 <pre><span class="k">python3</span> scripts/tts_elevenlabs.py oi8rgjIfLgJRsQ6rbZh3 vo.mp3 \
-  <span class="s">"Aprenda inteligência artificial na prática, de graça! No Inema Clube tem cursos de IA,
-   agentes, automaçêo e comunidade. Mais conhecimento, mais liberdade. Acesse: inema ponto clube."</span> 1.12
+  <span class="s">"Aprenda inteligência artificial na prática, de graça! No ARCKHÉ Clube tem cursos de IA,
+   agentes, automaçêo e comunidade. Mais conhecimento, mais liberdade. Acesse: ARCKHÉ ponto clube."</span> 1.12
 <span class="k">ffprobe</span> -v error -show_entries format=duration -of csv=p=0 vo.mp3   <span class="c"># 13.27</span></pre>
   </div></div>
 
@@ -305,7 +305,7 @@
 
   <div class="step"><div class="b">7</div><div>
     <h3>Publish</h3>
-    <p>At INEMA the Short went to the INEMA FTD channel via <a href="https://github.com/inematds/yt-pubx" target="_blank" rel="noopener">yt-pubx</a>, which writes the title and description; Shorts get no thumbnail.</p>
+    <p>At ARCKHÉ the Short went to the ARCKHÉ FTD channel via <a href="https://github.com/linnoff88-dev/yt-pubx" target="_blank" rel="noopener">yt-pubx</a>, which writes the title and description; Shorts get no thumbnail.</p>
 <pre>./yt-pubx publicar promo-9x16.mp4 --canal lives3 --sem-thumb --contexto <span class="s">"..."</span> --dry-run
 ./yt-pubx publicar promo-9x16.mp4 --canal lives3 --sem-thumb --plano &lt;pasta&gt;/plano.json</pre>
   </div></div>
@@ -320,8 +320,8 @@
     <figure><video src="../assets/promo-lipsync.mp4" poster="../assets/poster.jpg" controls playsinline preload="none"></video><figcaption>Version 2 · Kling lipsync on the front-facing scenes (+10 credits).</figcaption></figure>
   </div>
   <div class="ex" style="grid-template-columns:1fr;margin-top:18px">
-    <figure><img src="../assets/kling-bruto.jpg" alt="Eight frames from the raw Kling video" loading="lazy"><figcaption>What Kling delivered: a phone with the INEMA.CLUB screen (0–4.6 s), a laptop (4.6–9.9 s) and a wave (9.9–15 s). It even kept the phone menu legible.</figcaption></figure>
-    <figure><img src="../assets/montagem.jpg" alt="Eight frames from the edited video with the text" loading="lazy"><figcaption>After editing: the hook on frame 0, the four items coming in as they are spoken, the value phrase and the INEMA.CLUB closing.</figcaption></figure>
+    <figure><img src="../assets/kling-bruto.jpg" alt="Eight frames from the raw Kling video" loading="lazy"><figcaption>What Kling delivered: a phone with the ARCKHÉ AI screen (0–4.6 s), a laptop (4.6–9.9 s) and a wave (9.9–15 s). It even kept the phone menu legible.</figcaption></figure>
+    <figure><img src="../assets/montagem.jpg" alt="Eight frames from the edited video with the text" loading="lazy"><figcaption>After editing: the hook on frame 0, the four items coming in as they are spoken, the value phrase and the ARCKHÉ AI closing.</figcaption></figure>
     <figure><img src="../assets/lipsync-boca.jpg" alt="Face crops showing the mouth moving" loading="lazy"><figcaption>Lipsync check: the mouth opens and closes throughout the speech in scenes 1 and 3.</figcaption></figure>
   </div>
 </div></section>
@@ -339,9 +339,9 @@
 <footer>
   <div class="wrap">
     <div class="pill">Kling AI</div><div class="pill">ElevenLabs</div><div class="pill">ffmpeg</div><div class="pill">Pillow</div><div class="pill">Playwright</div><div class="pill">Claude Code</div>
-    <p style="margin-top:18px">UGC with an agent · real case of the INEMA.CLUB promo ·
-      <a href="https://github.com/inematds/ugc-agente">inematds/ugc-agente</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+    <p style="margin-top:18px">UGC with an agent · real case of the ARCKHÉ AI promo ·
+      <a href="https://github.com/linnoff88-dev/ugc-agente">linnoff88-dev/ugc-agente</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 

@@ -4,7 +4,7 @@
 Uso:
   ELEVENLABS_API_KEY=... python3 tts_elevenlabs.py <voice_id> <saida.mp3> "<texto>" [velocidade]
 
-Exemplo do promo INEMA: voz "Amanda Kelly" (oi8rgjIfLgJRsQ6rbZh3), velocidade 1.12, saiu com 13,3 s.
+Exemplo do promo ARCKHÉ: voz "Amanda Kelly" (oi8rgjIfLgJRsQ6rbZh3), velocidade 1.12, saiu com 13,3 s.
 """
 import json
 import os

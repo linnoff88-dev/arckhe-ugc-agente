@@ -6,17 +6,17 @@
 </div>
 
 
-[![VêÂ­deo UGC com agente](guia/assets/banner.jpg)](https://inematds.github.io/ugc-agente/guia/)
+[![VêÂ­deo UGC com agente](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· [PortuguêÂªs](README.md) êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
 ## O que êÂ©
 
-Este projeto conta como um agente de IA (o Claude Code) produziu um vêÂ­deo promocional de 15 segundos do INEMA.CLUB no estilo UGC, aquele vêÂ­deo "de gente real falando com a cêÂ¢mera" das redes sociais. Serve para quem cria conteêÂºdo e quer delegar a produêÂ§êÂ£o a um agente. Mostra a ideia, os passos com os comandos usados, as dicas que fizeram diferenêÂ§a e os problemas que apareceram no caminho. Para repetir, vocêÂª precisa de assinatura do Kling AI, uma conta ElevenLabs, ffmpeg, Python e um navegador logado no Kling.
+Este projeto conta como um agente de IA (o Claude Code) produziu um vêÂ­deo promocional de 15 segundos do ARCKHÉ AI no estilo UGC, aquele vêÂ­deo "de gente real falando com a cêÂ¢mera" das redes sociais. Serve para quem cria conteêÂºdo e quer delegar a produêÂ§êÂ£o a um agente. Mostra a ideia, os passos com os comandos usados, as dicas que fizeram diferenêÂ§a e os problemas que apareceram no caminho. Para repetir, vocêÂª precisa de assinatura do Kling AI, uma conta ElevenLabs, ffmpeg, Python e um navegador logado no Kling.
 
 ## ê°Å¸ââ Guia de uso
 
-Guia completo (ideia, dicas, problemas e passo a passo): **https://inematds.github.io/ugc-agente/guia/**
+Guia completo (ideia, dicas, problemas e passo a passo): **https://linnoff88-dev.github.io/arckhe-/guia/**
 
 ## A dica principal
 
@@ -34,7 +34,7 @@ Guia completo (ideia, dicas, problemas e passo a passo): **https://inematds.gith
 | Textos | `scripts/overlay.py` (Pillow) | 450 quadros PNG sincronizados com a fala |
 | Lipsync | site do Kling + `scripts/kling_lipsync_*.mjs` | cenas 1 e 3 com a boca sincronizada |
 | Montagem | `scripts/montar.sh` (ffmpeg) | 15,000 s, sem marca d'êÂ¡gua, ê¢Ëâ14 LUFS |
-| PublicaêÂ§êÂ£o | [yt-pubx](https://github.com/inematds/yt-pubx) | [Short no YouTube](https://www.youtube.com/watch?v=XOyI6dT6ioQ) |
+| PublicaêÂ§êÂ£o | [yt-pubx](https://github.com/linnoff88-dev/yt-pubx) | [Short no YouTube](https://www.youtube.com/watch?v=XOyI6dT6ioQ) |
 
 ## Arquivos
 
@@ -50,11 +50,11 @@ guia/                        pêÂ¡gina do guia (PT, EN, ES)
 
 ## Problemas que apareceram
 
-Lipsync esquecido na 1êÂª versêÂ£o, CLI do Kling sem êÂ¡udio, envio "sem confirmaêÂ§êÂ£o" que tinha entrado, download de trabalhos antigos, marca d'êÂ¡gua, formato de êÂ¡udio recusado (403), mp3 vazio, narraêÂ§êÂ£o longa, quadro 0 vazio, texto sem contraste e folha de quadros fora de ordem. A correêÂ§êÂ£o de cada um estêÂ¡ no [guia](https://inematds.github.io/ugc-agente/guia/#problemas).
+Lipsync esquecido na 1êÂª versêÂ£o, CLI do Kling sem êÂ¡udio, envio "sem confirmaêÂ§êÂ£o" que tinha entrado, download de trabalhos antigos, marca d'êÂ¡gua, formato de êÂ¡udio recusado (403), mp3 vazio, narraêÂ§êÂ£o longa, quadro 0 vazio, texto sem contraste e folha de quadros fora de ordem. A correêÂ§êÂ£o de cada um estêÂ¡ no [guia](https://linnoff88-dev.github.io/arckhe-/guia/#problemas).
 
 ---
 
-[INEMA.CLUB](https://inema.club) êÂ· conteêÂºdo aberto e gratuito
+[ARCKHÉ AI](https://ARCKHÉ AI) êÂ· conteêÂºdo aberto e gratuito
 
 ---
 

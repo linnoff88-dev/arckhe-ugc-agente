@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Monta o promo 9:16 de 15 s: cenas do Kling (com as de frente trocadas pelo Lip Sync),
-# camada de textos (overlay.py), narraçêo e música. Comandos exatamente como no promo INEMA.
+# camada de textos (overlay.py), narraçêo e música. Comandos exatamente como no promo ARCKHÉ.
 #
 # Entradas na pasta atual:
 #   kling.mp4      vídeo de 15 s do Kling (omni_ref_video, 9:16, 1080p, sem áudio)
